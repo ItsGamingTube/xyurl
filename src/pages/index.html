@@ -16,11 +16,12 @@
     </header>
     <div class="content">
       <div class="container">
-        <form name="make-url" onsubmit="submitURL();">
+        <form name="make-url" data-netlify-recaptcha="true" onsubmit="submitURL();">
           <p>
             <label for="destination">Address to shorten:</label>
             <input type="url" name="destination" id="destination">
           </p>
+            <div data-netlify-recaptcha="true"></div>
           <p>
             <button type="submit" class="btn" id="btn-create">Get a short link</button>
           </p>
